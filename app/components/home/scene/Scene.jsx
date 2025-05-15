@@ -10,8 +10,8 @@ import CageMesh from "./Cage";
 const Scene = () => {
   return (
     <Canvas camera={{ position: [0, 0, 4], fov: 50 }} >
-      <ambientLight intensity={10} color={'green'} />
-      <directionalLight position={[5, 5, 5]} intensity={10} color={'green'} />
+      <ambientLight intensity={30} color={'green'} />
+      <directionalLight position={[0, 1,1]} intensity={30} color={'green'} />
       <Suspense fallback={null}>
         <DeformableMesh url="./mass.glb" />
         <CageMesh url="./cage.glb" />
